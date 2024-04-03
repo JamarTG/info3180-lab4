@@ -1,0 +1,12 @@
+{% extends "base.html"%}
+
+{% block main %} 
+    <ul class="image-container">
+     
+        {% for image_url in image_urls %}
+            <li>
+                <img src="http://localhost:8080/uploads/{{ image_url }}" />
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
